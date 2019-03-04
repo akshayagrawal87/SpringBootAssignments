@@ -57,8 +57,8 @@ public class TopicControllerTest {
 		//System.out.println(result.getResponse());
 		String expected = "{\"id\":\"Course1\",\"name\":\"Spring\",\"description\":[\"10 Steps\"]}";
 
-		//JSONAssert.assertEquals(expected, result.getResponse()
-				//.getContentAsString(), true);
+		JSONAssert.assertNotEquals(expected, result.getResponse()
+				.getContentAsString(), true);
 		
 	
 		
